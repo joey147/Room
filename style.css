@@ -1,0 +1,57 @@
+#runner {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    height: 30px;
+    width: 30px;
+
+}
+
+
+.wrapper{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image:url(room.gif);
+  background-size: 100vw 100%;
+  animation: animate 20s linear infinite;
+
+}
+
+@keyframes example {
+  100%{
+    background position: 300vw 0px;
+
+  }
+}
+
+
+
+h3 {
+    animation-duration: 8s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: 0%;
+  }
+  50% {
+    margin-left: 300px;
+  }
+  100% {
+    margin-left: 0%;
+  }
+}
+
+
+.img-div{
+  position: relative;
+  left: 1%;
+  top: 2.5%;
+  width: 98%;
+  height: 95%;
+  background-size: cover;
+  background-position: center;
+}

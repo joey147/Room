@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+
+</head>
+<body>
+
+  </head>
+  <body>
+    <div id="runner"></div>
+
+    <div class="wrapper">
+    <img src="Signup.png" alt"Signup" class="Signup">
+    <img src="runner.png" alt"runner" class="runner">
+    </div>
+    <video width="500" height="400" controls>
+           <source src="Positivity.mp4" type="video/mp4">
+             <div class="slide two"></div>
+               <div id="cartoon"></div>
+
+             <div class="wrapper">
+           <img src="cartoon.png" alt"cartoon" class="cartoon">
+            <img src="room2.gif" alt"room" class="room">
+            </div>
+          </div>
+        </div>
+
+    </body>
+
+    <script>
+    $(document).ready(function () {
+        $('body').click(function (e) {
+            $("#divContainer")
+              .css({
+                  position: 'absolute',
+                  left: e.pageX,
+                  top: e.pageY,
+                  display: 'block'
+              })
+                .hide('explode', { pieces: 150 }, 700); 	// Explode effect using jQuery.
+        });
+    });
+    </script>
+
+
+
+</body>
+
+
+</html>
